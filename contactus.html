@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <!-- google fonts -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/contactus.css">
+    <link rel="stylesheet" href="./assets/common.css">
+    <!-- flipcard css  -->
+    <link rel="stylesheet" href="./assets/flipcard.css">
+    <!-- flipcard css  -->
+    <script src="./assets/popup.js"></script> 
+        
+        
+        <title>CESA</title>
+    </head>
+    <body>
+       <main>
+            <nav class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">CESA</label>
+                <ul class="navlinks">
+                    <li class="navlink"> <a  href="index.html">Home</a> </li>
+                    <li class="navlink"> <a  href="aboutus.html">About Us</a></li>
+                    <li class="navlink"> <a class="active" href="contactus.html">Contact Us</a></li>   
+                </ul>
+            </nav>
+            <div class="contact section" id="contact">
+                <h2 class="section__title">Contact Us</h2>
+                <span class="section__subtitle">Get In Touch</span>
+
+                <div class="popup sidha">
+                    <div class="icon">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="title">
+                        Success!!
+                    </div>
+                    <div class="description center">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, labore? Reprehenderit tempore cupiditate debitis, ex fugiat libero harum obcaecati illo omnis aspernatur non voluptatibus!
+                    </div>
+                    <div class="dismiss-btn">
+                        <button id="dismiss-popup-btn">Dismiss.</button>
+                    </div>
+                </div>
+
+                <div class="contact__container container">
+                    <form action="mailto:kunal.kv1dr64@gmail.com" method="POST" enctype="text/plain"
+                        class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <p><button class="button button--flex"  onclick="alert('congratulation!');"> Send Message</button></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+           
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+            <div class="contact box1">
+                <h2 class="header">Contact</h2>
+                <div class="nbox">
+                    <div class="social2">
+                        <i class="fas fa-map-marker-alt"></i><h5>Near Akurdi Railway Station Road, Sector No. 26, Pradhikaran, Nigdi, Pimpri, Maharashtra 411044</h5>
+                    </div>
+                    <div class="social2">
+                        <i class="fas fa-phone-alt"></i><h5>020-27653168-2151</h5>
+                    </div> 
+                    <div class="social2">
+                        <i class="fas fa-envelope"></i><h5>acm@pccoepune.org</h5>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="members  box2">
+                <h2 class="header">Team</h2> 
+        <div class="nbox">
+            <div class="social">
+                <h4>Omkar</h4> <div><a href="https://github.com/omkar-2002"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/omkar-salapurkar-56979a209/"><i class="fab fa-linkedin-in"></i></a></div>
+            </div>
+            <div class="social">
+                <h4>Kunal</h4>  <div><a href="https://github.com/Kunal0007"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/kunal-patil-61136521b/"><i class="fab fa-linkedin-in"></i></a></div>
+            </div> 
+            <div class="social">
+                <h4>Raj</h4>  <div><a href="https://github.com/RaJ-2311"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/raj-firke-4b1525202"><i class="fab fa-linkedin-in"></i></a></div>
+            </div>
+            <div class="social">
+                <h4>Harsh</h4> <div><a href=""><i class="fab fa-github"></i></a> <a href=""><i class="fab fa-linkedin-in"></i></a></div>
+            </div>
+        </div>
+                   
+               
+            </div>
+            <div class="location box3">
+                <h2 class="header"><i class="fas fa-map-marker-alt"></i>Location</h2>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d121012.1139773623!2d73.73715888502129!3d18.590777264032916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d18.5246164!2d73.8629674!4m5!1s0x3bc2b9e76c8fa205%3A0x1b210131915734fd!2spccoe%20address!3m2!1d18.6517288!2d73.7616398!5e0!3m2!1sen!2sin!4v1630942305100!5m2!1sen!2sin"
+                height="80%" width="230px"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="box4">
+            <div class="Copyright">
+                <h5>© Copyright CESA Department. </h5>
+                </div>
+            </div>
+            </div>
+            
+                    </footer>
+    </body>
+</html>

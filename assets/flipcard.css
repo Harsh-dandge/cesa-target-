@@ -1,0 +1,162 @@
+.center{
+    justify-content: center;
+    /* padding: 10px ; */
+    text-align: center;
+}
+.allcards{
+    display: grid;
+   
+    grid-template-columns: auto auto auto auto;
+}
+.maincontainer{
+    position: relative;
+    width: 20rem;
+    height: 22rem;
+    margin: 20px;
+    /* background: yellow; */
+}
+.hcard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 20%);
+    /* background: green; */
+}
+.hcard:hover{
+   transform: rotateY(180deg);
+   cursor: pointer;
+}
+.card__title{
+    margin: 15px;
+}
+.card__subtitle{
+    color: black;
+    text-align: center;
+}
+.hfront{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: rgb(238, 233, 233); */
+    color:#0e4e83;
+}
+.hback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgba(255, 255, 0, 0.979);
+    opacity: 10;
+    color:#0e4e83;
+    transform: rotateY(180deg);
+}
+
+/* popup window css */
+.sidha{
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    transform: translate(-50%,-50%);
+}
+.popup{
+    width: 350px;
+    height: 280px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    transition: top 1000ms ease-in-out;
+                  
+    opacity: 0;
+    top: -200%;
+    transform: translate(-50%,-50%)scale(0.5);
+    transition: opacity 300ms ease-in-out;
+}
+.popup .icon{
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #22eb22;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 60px;
+}
+.popup .active{
+    opacity: 1;
+    transform: translate(-50%,-50%)scale(1);
+    top: 50%;
+    transition: 300ms cubic-bezier(0.18, 0.885, 0.32, 1.275);
+}
+.popup .icon i.fa{
+    font-size: 30px;
+    color:#22eb22 ;
+}
+.popup .title{
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.popup .description{
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+.popup .dismiss-btn{
+    margin-top: 15px;
+}
+.popup .dismiss-btn button{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.popup .dismiss-btn button:hover{
+    /* padding: 10px 20px; */
+    background: black;
+    color: white;
+    /* border: 2px solid black; */
+    /* font-weight: 600; */
+    /* outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out; */
+}
+
+/* js + css */
+
+.popup > div{
+    top: 0%;
+    opacity: 1;
+}
+.popup .active .icon{
+    transition: all 300ms ease-in-out 250ms;
+}
+.popup .active .title{
+    transition: all 300ms ease-in-out 300ms;
+
+}
+.popup .active .description{
+    transition: all 300ms ease-in-out 350ms;
+}
+.popup .active .dismiss-btn{
+    transition: all 300ms ease-in-out 400ms;
+
+}
